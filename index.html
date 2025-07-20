@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Vietnam 360</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo" style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+                <img src="images/logoweb.png" alt="" style="width: 70px; height: 70px;">
+                <span style="color: #764ba2;">Explore Vietnam 360</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#" class="nav-link active" data-section="home">Trang chủ</a></li>
+                <li><a href="#" class="nav-link" data-section="about">Về chúng tôi</a></li>
+                <li><a href="#" class="nav-link" data-section="info">Thông tin</a></li>
+                <li><a href="#" class="nav-link" data-section="contact">Liên hệ</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section class="home-section" id="home">
+            <div class="container">
+                <div class="home-content">
+                    <h1 class="home-title">Khám phá Việt Nam</h1>
+                    <p class="home-subtitle">Diện mạo, lịch sử, con người và tri thức tương laiDiện mạo, lịch sử, con người và tầm nhìn toàn cảnh</p>
+                    <a href="#" class="cta-button" id="startExploreBtn">Bắt đầu khám phá</a>
+                    <button id="showAuthFormBtn" class="form-button"
+                        style="margin-top: 2rem; width: auto; padding: 0.8rem 2rem; font-size: 1.1rem;">Đăng nhập/Đăng
+                        ký</button>
+                </div>
+            </div>
+            <div>
+            </div>
+        </section>
+        <div class="map-container" id="mapContainer">
+            <iframe src="BandoVietNam.html" width="100%" height="800px" style="border: none;"></iframe>
+        </div>
+        <!-- Auth Section moved into home-section, hidden by default -->
+        <div id="homeAuthFormWrapper" style="display: none; margin-top: 2rem;">
+            <div class="auth-forms">
+                <form class="auth-form" id="loginForm">
+                    <h3>Đăng nhập</h3>
+                    <div class="form-group">
+                        <label for="loginEmail">Email:</label>
+                        <input type="email" id="loginEmail" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Mật khẩu:</label>
+                        <input type="password" id="loginPassword" name="password" required>
+                    </div>
+                    <button type="submit" class="form-button">Đăng nhập</button>
+                </form>
+
+                <form class="auth-form" id="registerForm">
+                    <h3>Đăng ký</h3>
+                    <div class="form-group">
+                        <label for="registerName">Họ tên:</label>
+                        <input type="text" id="registerName" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerEmail">Email:</label>
+                        <input type="email" id="registerEmail" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerPassword">Mật khẩu:</label>
+                        <input type="password" id="registerPassword" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerConfirmPassword">Xác nhận mật khẩu:</label>
+                        <input type="password" id="registerConfirmPassword" name="confirmPassword" required>
+                    </div>
+                    <button type="submit" class="form-button">Đăng ký</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <section class="content-section" id="about">
+            <div class="container">
+                <h2 class="section-title">Về chúng tôi</h2>
+                <div class="section-content">
+                    <p>Explore Vietnam 360 là dự án số hóa thông tin nhằm lan tỏa tình yêu quê hương, nâng cao hiểu biết
+                        và niềm tự hào dân tộc đối với từng vùng đất trên dải đất hình chữ S thân yêu. Chúng tôi mang
+                        đến cho bạn cái nhìn 360 độ về văn hóa, thông tin địa phương, lịch sử và địa danh nổi tiếng của
+                        Việt Nam.
+                        Website cung cấp cái nhìn tổng quan về 34 tỉnh thành tiêu biểu trên cả nước, bao gồm:
+                        <br>📍 Vị trí địa lý
+                        <br>📍 Diện tích và dân số
+                        <br>📍 Lịch sử hình thành
+                        <br>📍 Bản sắc văn hóa đặc trưng
+                        <br>📍 Danh lam thắng cảnh và tiềm năng du lịch
+                        <br>Với thiết kế trực quan, người dùng có thể dễ dàng click vào từng tỉnh trên bản đồ để khám
+                        phá thông tin chi tiết về vùng đất ấy – từ những con số thống kê khách quan cho đến câu chuyện
+                        văn hóa, con người sống động.
+                        <br>Chúng tôi tin rằng, hiểu về từng vùng miền chính là cách gắn kết cộng đồng, nuôi dưỡng tinh
+                        thần yêu nước và cùng nhau giữ gìn những giá trị quý báu của Tổ quốc.
+                        <br><b>"Tổ Quốc Trong Tim – Dấu chân đất Việt, tự hào truyền thống."</b>
+                    </p>
+                </div>
+                <div class="about-cards">
+                    <div class="about-card">
+                        <h3>🚀 Địa phương</h3>
+                        <p>Khám phá về diện tích, dân cư, con người, các dân tộc và địa danh/điểm du lịch nổi tiếng của
+                            mỗi vùng miền.</p>
+                    </div>
+                    <div class="about-card">
+                        <h3>🌸 Văn hóa</h3>
+                        <p>Tìm hiểu về nền văn hóa đa dạng, phong phú với những truyền thống và phong tục độc đáo.</p>
+                    </div>
+                    <div class="about-card">
+                        <h3>🏛️ Lịch sử</h3>
+                        <p>Tìm hiểu về các phong tục tập quán, lịch sử của mỗi vùng miềnmiền.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Info Section -->
+        <section class="content-section" id="info">
+            <div class="container">
+                <h2 class="section-title">Thông tin</h2>
+                <div class="section-content">
+                    <h3>🌍 Địa lý và Tự nhiên</h3>
+                    <p>Việt Nam nằm ở khu vực Đông Nam Á, phía đông bán đảo Đông Dương, tiếp giáp với Trung Quốc ở phía bắc, Lào và Campuchia ở phía tây, Biển Đông ở phía đông và nam. Với hơn <b>3.200 km đường bờ biển</b>, địa hình trải dài hình chữ S, Việt Nam sở hữu hệ sinh thái phong phú với rừng nguyên sinh, cao nguyên, đồng bằng, hệ thống sông ngòi đa dạng và nhiều vịnh biển đẹp nổi tiếng.
+                        Khí hậu nhiệt đới gió mùa tạo nên sự đa dạng về cảnh quan – từ tuyết phủ trên đỉnh Fansipan ở miền Bắc, đến những bãi cát trắng nắng vàng ở miền Trung và miền Nam. Thiên nhiên trù phú chính là nguồn cảm hứng bất tận cho du lịch và bản sắc vùng miền.</p>
+
+                    <h3>🏛️ Lịch sử</h3>
+                    <p>Việt Nam là quốc gia có lịch sử dựng nước và giữ nước hàng nghìn năm, bắt đầu từ thời các vua Hùng dựng nước Văn Lang. 
+                    Trải qua nhiều triều đại phong kiến, các cuộc kháng chiến chống ngoại xâm và quá trình thống nhất đất nước, người Việt đã 
+                    hun đúc nên tinh thần kiên cường, bất khuất và lòng yêu nước sâu sắc. Ngày nay, lịch sử Việt Nam là nguồn di sản quý báu, 
+                    góp phần làm nên niềm tự hào dân tộc và bồi đắp ý thức cộng đồng mạnh mẽ.</p>
+
+                    <h3>🎭 Văn hóa</h3>
+                    <p>Văn hóa Việt Nam là sự giao thoa độc đáo giữa truyền thống và hiện đại. Với 54 dân tộc anh em, mỗi vùng miền đều có nét 
+                        văn hóa riêng biệt: từ áo dài duyên dáng, nón lá truyền thống, hát quan họ Bắc Ninh, đến cồng chiêng Tây Nguyên, lễ hội 
+                        chùa Hương, hay tín ngưỡng thờ cúng Hùng Vương được UNESCO công nhận. 
+                        Ẩm thực Việt Nam cũng là niềm tự hào toàn cầu với những món ăn như phở, bánh mì, gỏi cuốn, đậm đà bản sắc và tinh tế trong từng hương vị.</p>
+
+                    <h3>🌟 Thành tựu</h3>
+                    <p>Từ một quốc gia còn nghèo sau chiến tranh, Việt Nam đã vươn lên mạnh mẽ trở thành một trong những nền kinh tế 
+                        phát triển nhanh nhất châu Á. Đất nước đã đạt được nhiều thành tựu trong các lĩnh vực:
+                        <br><b>Kinh tế:</b> tăng trưởng GDP ấn tượng, thu hút đầu tư nước ngoài
+                        <br><b>Giáo dục:</b> phổ cập giáo dục toàn quốc, học sinh đạt thành tích cao tại các kỳ thi quốc tế
+                        <br><b>Khoa học – Công nghệ:</b> phát triển công nghệ thông tin, trí tuệ nhân tạo, khởi nghiệp đổi mới sáng tạo
+                        <br><b>Ngoại giao:</b> giữ vững vai trò tích cực trong các tổ chức quốc tế, thúc đẩy hòa bình và hợp tác
+                        <br><import>Việt Nam – đất nước của quá khứ hào hùng, hiện tại năng động và tương lai đầy hứa hẹn.</import></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Auth Section -->
+        <!--<section class="content-section" id="auth">
+            ... (đã di chuyển vào home-section) ...
+        </section>-->
+
+        <!-- Contact Section -->
+        <section class="content-section" id="contact">
+            <div class="container">
+                <h2 class="section-title">Liên hệ</h2>
+                <div class="section-content">
+                    <p>Chúng tôi luôn sẵn sàng lắng nghe ý kiến và hỗ trợ bạn trong hành trình khám phá Việt Nam.</p>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h4>📍 Địa chỉ</h4>
+                        <p>Vĩnh Hưng, Hoàng Mai, Hà Nội, Việt Nam</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>📞 Điện thoại</h4>
+                        <p>+84 349 993 222</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>📧 Email</h4>
+                        <p>explorevietnam360@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>🌐 Website</h4>
+                        <p>www.explorevietnam360.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Explore Vietnam 360. Tất cả quyền được bảo lưu.</p>
+        </div>
+    </footer>
+    <script src="libraries/main.js"></script>
+    <script src="libraries/jquery-2.2.4.min.js"></script>
+    <script src="libraries/jquery.svg.pan.zoom.js"></script>
+    <script src="libraries/data.js"></script>
+    <script src="libraries/script.js"></script>
+</body>
+
+</html>
